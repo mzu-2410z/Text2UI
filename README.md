@@ -45,7 +45,6 @@ The core of this application is the `ui_generator.py` module, which interacts wi
 - **DeepSeek R1 Free Model:** The primary LLM used for UI generation.
 - **Tailwind CSS:** A utility-first CSS framework for rapid and responsive UI styling.
 - **Font Awesome:** For scalable vector icons.
-- **ngrok:** (Optional, for local development/demo) To expose your local Streamlit app to the internet.
 
 ---
 
@@ -59,7 +58,7 @@ The core of this application is the `ui_generator.py` module, which interacts wi
 ### 1. Clone the Repository
 
 ```sh
-git clone <your-repository-url>
+git clone https://github.com/mzu-2410z/Text2UI/
 cd Text2UI
 ```
 
@@ -104,13 +103,6 @@ OPENROUTER_API_KEY="sk-or-v1-YOUR_OPENROUTER_API_KEY_HERE"
 .env
 ```
 
-### 5. (Optional) Configure ngrok Authtoken
-
-- Get your ngrok authtoken from [ngrok.com](https://ngrok.com/).
-- Update `ngrok_utils.py` (or `utils.py` if renamed) with your actual ngrok authtoken in the `setup_ngrok()` function.
-
----
-
 ## ▶️ Running the Application
 
 ### Method 1: Local
@@ -120,16 +112,6 @@ streamlit run app.py
 ```
 
 - Opens at: `http://localhost:8501`
-
-### Method 2: With ngrok (Public Access)
-
-```sh
-python ngrok_utils.py
-```
-
-- Prints a public URL (e.g., `https://xxxx-xx-xx-xx.ngrok-free.app`) for sharing.
-
----
 
 ## 📝 Usage Guide
 
